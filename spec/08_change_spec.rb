@@ -67,8 +67,9 @@ describe 'lucky numbers with rotate! method' do
     # remove the 'x' before running this test
     it 'will change the first value to 7 and last value to 3' do
       expect { 
-        lucky_numbers.rotate!(1) 
-      }.to change { lucky_numbers.first && lucky_numbers.last}.to eq(7 && 3)
+        lucky_numbers.rotate! 
+      }.to change { lucky_numbers.first }.to(7)
+       .and change{ lucky_numbers.last }.to(3) #!!!ISSUE
     end
   end
 end
