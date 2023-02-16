@@ -2,8 +2,10 @@
 
 # rubocop: disable Layout/LineLength
 
-# require_relative '../lib/15c_random_number'
-# require_relative '../lib/15b_binary_search'
+#note to self: the comment above disables word wrap when we use rubocop's suggestions.
+
+require_relative '../lib/15c_random_number'
+require_relative '../lib/15b_binary_search'
 
 # class for computer to find random number
 class BinaryGame
@@ -11,7 +13,7 @@ class BinaryGame
     @minimum = minimum
     @maximum = maximum
     @random_number = random_number
-    @guess_count = 0
+    @guess_count = 0  
   end
 
   def play_game
