@@ -107,6 +107,7 @@ describe BinarySearch do
 
   describe '#update_range' do
     let(:range_number) { double('random_number', value: 8) }
+    #note to self: the 'random_number' is an optional argument, and is useful while debugging errors.
 
     context 'when the guess is less than the answer' do
       subject(:low_guess_game) { described_class.new(0, 9, range_number, 4) }
